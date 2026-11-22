@@ -1,3 +1,9 @@
+## 2026-11-22 - PvP Supporter 1.1.0.17
+
+- Renamed the existing GitHub repository to Roxyz0501/PvPSupporter. Repository ID 1423674147 was preserved. Verified the old repository redirects to the new name and the old 1.1.0.16 package remains accessible. The internal plugin ID remains KuzushiBeacon.
+- Release https://github.com/Roxyz0501/PvPSupporter/releases/tag/v1.1.0.17 at 107f56834956611af5bc66b416fb7f33d90f98e9. Verified anonymous ZIP, DLL, manifest, eight entries and icon. ZIP 221535 bytes, SHA256 C54C8A761D58F9B64CCF9310448DE73EE3EA93D39090778E4F034D38FF6813B0. Release build zero warnings/errors.
+- Shared index 2f298cc9bc57b54a926c78dc32d8961509b0b3fc uses the new repository, icon and install/update/testing URLs. All other entries preserved.
+
 ## 2026-11-18 - PvP Supporter 1.1.0.16
 
 - Release https://github.com/Roxyz0501/KuzushiBeacon/releases/tag/v1.1.0.16 at b7d423ba7f7a1910a9a965a38ebf2b6bc487396a. Anonymous ZIP, DLL, manifest, eight entries, repository and icon verified. ZIP 221595 bytes, SHA256 BEFA5F49C31857DEF330D49F836A528080EB623BD9B14364CE9E570BEBB13D2A.
