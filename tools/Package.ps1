@@ -5,8 +5,8 @@ $dist = Join-Path $root 'dist'
 [IO.Directory]::CreateDirectory($dist) | Out-Null
 $manifest = [IO.File]::ReadAllText((Join-Path $output 'KuzushiBeacon.json'), [Text.Encoding]::UTF8) | ConvertFrom-Json
 if ($manifest.InternalName -ne 'KuzushiBeacon' -or $manifest.Author -ne 'Roxyz0501' -or
-    $manifest.RepoUrl -ne 'https://github.com/Roxyz0501/KuzushiBeacon' -or
-    $manifest.IconUrl -ne 'https://raw.githubusercontent.com/Roxyz0501/KuzushiBeacon/main/KuzushiBeacon/images/icon.png') {
+    $manifest.RepoUrl -ne 'https://github.com/Roxyz0501/PvPSupporter' -or
+    $manifest.IconUrl -ne 'https://raw.githubusercontent.com/Roxyz0501/PvPSupporter/main/KuzushiBeacon/images/icon.png') {
     throw 'Invalid package identity or URLs'
 }
 $zipPath = Join-Path $dist ('KuzushiBeacon-' + $manifest.AssemblyVersion + '.zip')
