@@ -52,6 +52,8 @@ public sealed partial class Plugin : IDalamudPlugin
     private readonly Persistence.SettingsStore settingsStore;
     private readonly Persistence.ReviewStore reviewStore;
     private readonly HistoryFilesView historyFiles;
+    private static readonly PluginDependency[] PluginDependencies = [];
+    private readonly StandardPluginInfo pluginInfo = new(PluginDependencies);
     private bool persistenceNotice;
     private uint trackedOwner;
     private long drawnLines;
@@ -471,8 +473,10 @@ public sealed partial class Plugin : IDalamudPlugin
                 if(ImGui.BeginTabItem("PvP Supporter###Supporter"))
                 {DrawSettingsNavigation();ImGui.EndTabItem();}
                 historyFiles.Draw(config.Language, reviewStore.Revision + (ledger?.StorageRevision ?? 0));
+                var language = config.Language ?? "en";
                 StandardPluginTabs.DrawStandardTrailingTabs(T("Settings"), "Settings", DrawSettings,
-                    T("LanguageSettings"), DrawLanguage, T("Support"), DrawSupport);
+                    T("LanguageSettings"), DrawLanguage, T("Support"), DrawSupport,
+                    StandardPluginInfo.Title(language), PluginDependencies.Length == 0 ? null : DrawPluginInfo);
                 ImGui.EndTabBar();
             }
         }
@@ -480,6 +484,8 @@ public sealed partial class Plugin : IDalamudPlugin
 
         if (!open) { ledger?.SetVisible(false); pi.UiBuilder.Draw -= DrawSettingsWindow; }
     }
+
+    private void DrawPluginInfo() => pluginInfo.Draw(pi, config.Language ?? "en");
 
     private void DrawSettings()
     {

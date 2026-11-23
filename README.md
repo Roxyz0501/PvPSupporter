@@ -1,6 +1,6 @@
 # PvP Supporter
 
-PvP向けの対象選択・崩し/斬鉄剣・攻撃機会・生存・味方の支援と、戦績記録をまとめたDalamudプラグイン。作者 **Roxyz0501**、API 15、**1.1.0.17**。
+PvP向けの対象選択・崩し/斬鉄剣・攻撃機会・生存・味方の支援と、戦績記録をまとめたDalamudプラグイン。作者 **Roxyz0501**、API 15、**1.1.0.18**。
 
 旧名はKuzushi Beaconです。GitHubリポジトリは [Roxyz0501/PvPSupporter](https://github.com/Roxyz0501/PvPSupporter) に改名しました。内部IDは `KuzushiBeacon` のままで、保存設定と旧コマンドを引き続き使えます。公開プレビューです。自動テストと描画検証を行っていますが、実ゲーム内の操作・検知・実負荷は未検証です。
 
