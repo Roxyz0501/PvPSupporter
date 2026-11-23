@@ -1,3 +1,9 @@
+## 2026-11-23 - PvP Supporter 1.1.0.18
+
+- Incorporated the canonical StandardPluginInfo.cs and StandardPluginTabs.cs unchanged. No external Dalamud plugin dependencies. The settings window passes a null info callback with zero definitions. Existing settings views matched the prior release in five pixel comparisons. 802 managed checks and 507 headless UI frames passed. Release build zero warnings/errors.
+- Release https://github.com/Roxyz0501/PvPSupporter/releases/tag/v1.1.0.18 at f65deb6e81f43ee7000c2db8412a506649c98c64. Public package, manifest, DLL, repository and icon verified. ZIP 227265 bytes, SHA256 ADBE34C880C9DDD1E2C6C7CDAABEAE442CB9889CA91B9849D58281C3AF6079E5.
+- Shared index ebded410ad6ee61e00747962af98e5eb46286231 verified. Only the PvP Supporter entry was updated.
+
 ## 2026-11-22 - PvP Supporter 1.1.0.17
 
 - Renamed the existing GitHub repository to Roxyz0501/PvPSupporter. Repository ID 1423674147 was preserved. Verified the old repository redirects to the new name and the old 1.1.0.16 package remains accessible. The internal plugin ID remains KuzushiBeacon.
